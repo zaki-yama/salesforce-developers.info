@@ -66,7 +66,7 @@ DISPLAY_SEARCH_FORM = False
 # PAGES_SORT_ATTRIBUTE = 'Title'
 
 # Display the "Fork me on Github" banner
-GITHUB_URL = 'https://github.com/zaki-yama/zaki-yama.github.io'
+GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers'
 
 # Blogroll
 # LINKS = []

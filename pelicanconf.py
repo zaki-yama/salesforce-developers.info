@@ -7,13 +7,14 @@ AUTHOR = 'Shingo Yamazaki'
 SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
-u"""For pelican-clean-blog theme"""
+### For `pelican-clean-blog`
 # HEADER_COVER = 'static/my_image.png'  # TODO
 GITHUB_URL = 'http://github.com/zaki-yama'
 TWITTER_URL = 'http://twitter.com/zaki___yama'
 FACEBOOK_URL = 'http://facebook.com/shingo.yamazaki.12'
 
 COLOR_SCHEME_CSS = 'github.css'
+###
 
 PATH = 'content'
 
@@ -66,7 +67,7 @@ DISPLAY_SEARCH_FORM = False
 # PAGES_SORT_ATTRIBUTE = 'Title'
 
 # Display the "Fork me on Github" banner
-GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers'
+GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers-info'
 
 # Blogroll
 # LINKS = []

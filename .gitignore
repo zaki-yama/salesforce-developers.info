@@ -1,0 +1,13 @@
+## Pelican
+output/*
+*.pid
+
+## Python
+__pycache__
+*.py[cod]
+venv
+
+## Mac OS X
+.DS_Store
+.*~
+*~

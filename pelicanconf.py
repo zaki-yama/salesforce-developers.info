@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 THEME = 'pelican-clean-blog'
 AUTHOR = 'Shingo Yamazaki'
-SITENAME = 'salesforce-developers-info'
+SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
 PATH = 'content'

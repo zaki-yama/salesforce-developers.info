@@ -11,6 +11,7 @@ SITEURL = ''
 # HEADER_COVER = 'static/my_image.png'  # TODO
 GITHUB_URL = 'http://github.com/zaki-yama'
 TWITTER_URL = 'http://twitter.com/zaki___yama'
+TWITTER_USERNAME = 'zaki___yama'
 FACEBOOK_URL = 'http://facebook.com/shingo.yamazaki.12'
 
 COLOR_SCHEME_CSS = 'github.css'

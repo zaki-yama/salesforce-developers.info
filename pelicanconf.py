@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = 'pelican-blueidea'
+THEME = 'themes/pelican-blueidea'
 AUTHOR = 'Shingo Yamazaki'
 SITENAME = 'Salesforce Developers.info'
 SITEURL = ''

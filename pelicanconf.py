@@ -19,7 +19,12 @@ COLOR_SCHEME_CSS = 'github.css'
 
 PATH = 'content'
 
+LOCALE = 'en_US'
 TIMEZONE = 'Asia/Tokyo'
+DATE_FORMATS = {
+    'en': '%Y-%m-%d(%a)',
+    'ja': '%Y-%m-%d(%a)',
+}
 
 DEFAULT_LANG = 'en'
 

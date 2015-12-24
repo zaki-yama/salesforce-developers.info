@@ -342,6 +342,10 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
 		.social a[href*='vimeo.com'] {background-image: url('../images/icons/vimeo.png');}
 		.social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.png');}
+		.social a[href*='hateblo.jp'] {
+			background-image: url('http://hatenablog.com/images/favicon.ico');
+			background-size: 16px 16px;
+		}
 
 /*
 	About

@@ -44,7 +44,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('Twitter', 'http://twitter.com/zaki___yama'),
-          ('GitHub', 'https://github.com/zaki-yama'),)
+          ('GitHub', 'https://github.com/zaki-yama'),
+          ('Blog', 'http://dackdive.hateblo.jp'),
+          )
 
 DEFAULT_PAGINATION = 10
 

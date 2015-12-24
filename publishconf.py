@@ -22,5 +22,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = 'salesforce-developers-info'
 GOOGLE_ANALYTICS = 'UA-46209909-1'

@@ -48,7 +48,7 @@ h3:before {
 	content: '\f0e7';
 	margin-right: 10px;
 }
-h3 {
+h2, h3 {
 	margin-top: 40px;
 }
 

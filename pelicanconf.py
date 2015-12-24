@@ -7,6 +7,7 @@ AUTHOR = 'Shingo Yamazaki'
 SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
+MD_EXTENSIONS = ['extra', 'nl2br']
 ### For `pelican-clean-blog`
 # HEADER_COVER = 'static/my_image.png'  # TODO
 GITHUB_URL = 'http://github.com/zaki-yama'

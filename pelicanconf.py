@@ -8,15 +8,6 @@ SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
 MD_EXTENSIONS = ['extra', 'nl2br']
-### For `pelican-clean-blog`
-# HEADER_COVER = 'static/my_image.png'  # TODO
-GITHUB_URL = 'http://github.com/zaki-yama'
-TWITTER_URL = 'http://twitter.com/zaki___yama'
-TWITTER_USERNAME = 'zaki___yama'
-FACEBOOK_URL = 'http://facebook.com/shingo.yamazaki.12'
-
-COLOR_SCHEME_CSS = 'github.css'
-###
 
 PATH = 'content'
 
@@ -78,8 +69,5 @@ DISPLAY_SEARCH_FORM = False
 # Display the "Fork me on Github" banner
 GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers-info'
 
-# Blogroll
-# LINKS = []
-
-# Social widget
-# SOCIAL = []
+# Display "Tweet" button in the article
+TWITTER_USERNAME = 'zaki___yama'

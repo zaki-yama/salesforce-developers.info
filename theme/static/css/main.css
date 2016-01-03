@@ -72,7 +72,17 @@ a:hover, a:active {
 h1 a:hover {
     background-color: inherit
 }
-	
+
+code {
+	/*font-size: 90%;*/
+	margin: 0 2px;
+	padding: 0 5px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	background-color: rgba(0, 0, 0, 0.03);
+	border-radius: 3px;
+	font-family: 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+}
+
 /* Paragraphs */
 div.line-block,
 p { margin-top: 1em;

@@ -67,7 +67,7 @@ DISPLAY_SEARCH_FORM = False
 # PAGES_SORT_ATTRIBUTE = 'Title'
 
 # Display the "Fork me on Github" banner
-GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers-info'
+GITHUB_URL = 'https://github.com/zaki-yama/salesforce-developers.info'
 
 # Display "Tweet" button in the article
 TWITTER_USERNAME = 'zaki___yama'

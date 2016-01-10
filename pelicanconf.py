@@ -7,7 +7,14 @@ AUTHOR = 'Shingo Yamazaki'
 SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
-MD_EXTENSIONS = ['extra', 'nl2br']
+MD_EXTENSIONS = [
+    'nl2br',
+    'linkify',
+    # 'markdown_checklist.extension',
+    # 'markdown_newtab',
+    # 'embedly',
+    'codehilite(css_class=highlight)', 'extra',  # default
+]
 
 # PLUGIN_PATHS = ['../pelican-plugins']
 # PLUGINS = ['assets']

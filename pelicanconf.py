@@ -16,8 +16,8 @@ MD_EXTENSIONS = [
     'codehilite(css_class=highlight)', 'extra',  # default
 ]
 
-# PLUGIN_PATHS = ['../pelican-plugins']
-# PLUGINS = ['assets']
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['assets']
 
 PATH = 'content'
 

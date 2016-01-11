@@ -118,6 +118,10 @@ a {
 .mg-header {
     padding: 1em 0;
     background-color: $salesforceBlue;
+
+    @media (max-width: 524px) {
+      height: 60px;
+    }
 }
 
 .mg-brand {

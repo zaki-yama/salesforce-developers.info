@@ -46,7 +46,7 @@
 <meta itemprop="image" content="{{ META_IMAGE }}" />
 {% endif %}
 {% endblock %}
-<link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed"/>
+<link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed"/>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/uikit.min.css">
@@ -129,8 +129,8 @@
 
       <div class="uk-panel uk-panel-box">
         <h3 class="uk-panel-title">Receive Updates</h3>
-        <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed">
-          <i class="uk-icon-rss uk-icon-medium"></i> ATOM
+        <a rel="alternate" type="application/RSS+xml" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" class="mg-feed">
+          <i class="uk-icon-rss uk-icon-medium"></i> RSS
         </a>
       </div>
 
@@ -158,7 +158,7 @@
 
     <div class="mg-icons-small uk-subnav uk-visible-small">
       <li>
-        <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="uk-icon-button uk-icon-rss"></a>
+        <a rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" class="uk-icon-button uk-icon-rss"></a>
       </li>
       {% if SOCIAL %}
       {% for icon, link in SOCIAL %}

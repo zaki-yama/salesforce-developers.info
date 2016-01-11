@@ -51,7 +51,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/zaki___yama'),
           ('github', 'https://github.com/zaki-yama'),
-          ('blog', 'http://dackdive.hateblo.jp'),
+          ('pencil', 'http://dackdive.hateblo.jp'),
           )
 
 SHARE = True

@@ -82,6 +82,10 @@ a {
     color: $textGrey;
 }
 
+.uk-icon-pencil {
+  color: $githubBlack;
+}
+
 .uk-nav-side > li.uk-active > a {
     background: $accentGreen;
 }
@@ -251,6 +255,10 @@ a {
 
     .uk-icon-envelope {
         background-color: $mailBlue;
+    }
+
+    .uk-icon-pencil {
+        background-color: $githubBlack;
     }
 }
 

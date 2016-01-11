@@ -2,12 +2,22 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = 'theme'
+THEME = 'pelican-mg'
 AUTHOR = 'Shingo Yamazaki'
 SITENAME = 'Salesforce Developers.info'
 SITEURL = ''
 
-MD_EXTENSIONS = ['extra', 'nl2br']
+MD_EXTENSIONS = [
+    'nl2br',
+    'linkify',
+    # 'markdown_checklist.extension',
+    # 'markdown_newtab',
+    # 'embedly',
+    'codehilite(css_class=highlight)', 'extra',  # default
+]
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['assets']
 
 PATH = 'content'
 
@@ -17,6 +27,11 @@ DATE_FORMATS = {
     'en': '%Y-%m-%d(%a)',
     'ja': '%Y-%m-%d(%a)',
 }
+
+TAG_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search', 'tipue_search')
+TIPUE_SEARCH_SAVE_AS = 'tipue_search.json'
 
 DEFAULT_LANG = 'en'
 
@@ -34,10 +49,12 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/zaki___yama'),
-          ('GitHub', 'https://github.com/zaki-yama'),
-          ('Blog', 'http://dackdive.hateblo.jp'),
+SOCIAL = (('twitter', 'https://twitter.com/zaki___yama'),
+          ('github', 'https://github.com/zaki-yama'),
+          ('pencil', 'http://dackdive.hateblo.jp'),
           )
+
+SHARE = True
 
 DEFAULT_PAGINATION = 10
 

@@ -3,6 +3,7 @@ $accentGreen: #28D1B2;
 $feedOrange: #FF6600;
 $twitterBlue: #00B0ED;
 $facebookBlue: #3B5999;
+$salesforceBlue: #0070D2;
 $googleRed: #D34836;
 $githubBlack: #333;
 $mailBlue: #059;
@@ -116,8 +117,7 @@ a {
 
 .mg-header {
     padding: 1em 0;
-    // Green style
-    background-color: $facebookBlue;
+    background-color: $salesforceBlue;
 }
 
 .mg-brand {

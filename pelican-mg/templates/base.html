@@ -54,155 +54,161 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css">
 {% endif %}
 {% assets filters="scss", output="css/style.css", "scss/main.scss", "scss/tipuesearch.scss", "css/solarized.css"  %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 <header class=" mg-header uk-navbar uk-navbar-attached">
 
-    <div class="uk-container uk-container-center">
+  <div class="uk-container uk-container-center">
 
-        <a class="mg-brand uk-navbar-brand uk-hidden-small" href="{{ SITEURL }}">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
-        <div class="mg-tagline uk-navbar-content uk-hidden-small">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</div>
-        <!-- モバイルのメニュー機能 -->
-        <!--<a class="uk-navbar-toggle uk-visible-small" href="#mg-offcanvas" data-uk-offcanvas></a>-->
-        <a class="mg-brand uk-navbar-brand uk-navbar-center uk-visible-small" href="{{ SITEURL }}">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
+    <a class="mg-brand uk-navbar-brand uk-hidden-small" href="{{ SITEURL }}">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
+    <div class="mg-tagline uk-navbar-content uk-hidden-small">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</div>
+    <!-- モバイルのメニュー機能 -->
+    <!--<a class="uk-navbar-toggle uk-visible-small" href="#mg-offcanvas" data-uk-offcanvas></a>-->
+    <a class="mg-brand uk-navbar-brand uk-navbar-center uk-visible-small" href="{{ SITEURL }}">{% if ALT_NAME %}{{ ALT_NAME }}{% else %}{{ SITENAME }}{% endif %}</a>
 
-    </div>
+  </div>
 </header>
 
 <main class="mg-main">
 
 <div class="uk-container uk-container-center">
 
-    <div class="uk-grid" data-uk-grid-margin>
+  <div class="uk-grid" data-uk-grid-margin>
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        <div class="uk-width-medium-1-5 uk-hidden-small">
+    <div class="uk-width-medium-1-5 uk-hidden-small">
 
-            {% if not DISABLE_SEARCH %}
-            <div class="uk-panel uk-panel-box">
-                <form class="uk-search" action="search.html" data-uk-search>
-                    <input class="uk-search-field tipue_search" type="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search...">
-                </form>
-            </div>
-            {% endif %}
+      {% if not DISABLE_SEARCH %}
+      <div class="uk-panel uk-panel-box">
+        <form class="uk-search" action="search.html" data-uk-search>
+            <input class="uk-search-field tipue_search" type="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search...">
+        </form>
+      </div>
+      {% endif %}
 
-            <div class="uk-panel uk-panel-box">
-                <ul class="uk-nav uk-nav-side">
-                    {% if DISPLAY_CATEGORIES_ON_MENU != False %}
-                    <li class="uk-nav-header">Categories</li>
+      <div class="uk-panel uk-panel-box">
+        <ul class="uk-nav uk-nav-side">
+          {% if DISPLAY_CATEGORIES_ON_MENU != False %}
+          <li class="uk-nav-header">Categories</li>
 
-                    {% for cat, _ in categories %}
-                    <li {% if cat == category %}class="uk-active"{% endif %}>
-                      <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-                    </li>
-                    {% endfor %}
+          {% for cat, _ in categories %}
+          <li {% if cat == category %}class="uk-active"{% endif %}>
+            <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+          </li>
+          {% endfor %}
 
-                    {% endif %}
+          {% endif %}
 
-                    {% if DISPLAY_PAGES_ON_MENU != False %}
-                    <li class="uk-nav-header">Pages</li>
+          {% if DISPLAY_PAGES_ON_MENU != False %}
+          <li class="uk-nav-header">Pages</li>
 
-                    {% for p in PAGES %}
-                    <li {% if p == page %}class="uk-active"{% endif %}>
-                        <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-                    </li>
-                    {% endfor %}
+          {% for p in PAGES %}
+          <li {% if p == page %}class="uk-active"{% endif %}>
+            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+          </li>
+          {% endfor %}
 
-                    {% endif %}
+          {% endif %}
 
-                    <li class="uk-nav-divider"></li>
-                    <li {% if page_name == 'archives' %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-                </ul>
-            </div>
+          <li class="uk-nav-divider"></li>
+          <li {% if page_name == 'archives' %}class="uk-active"{% endif %}>
+            <a href="{{ SITEURL }}/archives.html">Archives</a>
+          </li>
+        </ul>
+      </div>
 
-            <div class="uk-panel uk-panel-box">
-                <h3 class="uk-panel-title">Receive Updates</h3>
-                <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> ATOM</a>
-            </div>
+      <div class="uk-panel uk-panel-box">
+        <h3 class="uk-panel-title">Receive Updates</h3>
+        <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed">
+          <i class="uk-icon-rss uk-icon-medium"></i> ATOM
+        </a>
+      </div>
 
-            {% if SOCIAL %}
-            <div class="uk-panel uk-panel-box">
-                <h3 class="uk-panel-title">Contacts</h3>
-                {% for icon, link in SOCIAL %}
-                <a class="mg-icon-link" href="{{ link }}">
-                    <i class="uk-icon-{{ icon }} uk-icon-medium"></i>
-                </a>
-                {% endfor %}
-            </div>
-            {% endif %}
-
-        </div>
+      {% if SOCIAL %}
+      <div class="uk-panel uk-panel-box">
+        <h3 class="uk-panel-title">Contacts</h3>
+        {% for icon, link in SOCIAL %}
+        <a class="mg-icon-link" href="{{ link }}">
+          <i class="uk-icon-{{ icon }} uk-icon-medium"></i>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
 
     </div>
+
+  </div>
 
 </div>
 
 </main>
 
 <footer class="mg-footer">
-    <div class="uk-container uk-container-center uk-text-center">
+  <div class="uk-container uk-container-center uk-text-center">
 
-        <div class="mg-icons-small uk-subnav uk-visible-small">
-            <li><a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="uk-icon-button uk-icon-rss"></a></li>
-            {% if SOCIAL %}
-            {% for icon, link in SOCIAL %}
-            <li>
-                <a href="{{ link }}" class="uk-icon-button uk-icon-{{ icon.replace("-square", "") }}"></a>
-            </li>
-            {% endfor %}
-            {% endif %}
-        </div>
-
-        <div class="mg-author uk-panel">
-            <p>{{ FOOTER }}</p>
-
-            <p>Powered by <a href="http://blog.getpelican.com">Pelican</a>.<br class="uk-visible-small"> Theme <a href="https://github.com/lucachr/pelican-mg">mg</a> by <a href="https://github.com/lucachr">Luca Chiricozzi</a>.</p>
-        </div>
+    <div class="mg-icons-small uk-subnav uk-visible-small">
+      <li>
+        <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="uk-icon-button uk-icon-rss"></a>
+      </li>
+      {% if SOCIAL %}
+      {% for icon, link in SOCIAL %}
+      <li>
+        <a href="{{ link }}" class="uk-icon-button uk-icon-{{ icon.replace("-square", "") }}"></a>
+      </li>
+      {% endfor %}
+      {% endif %}
     </div>
+
+    <div class="mg-author uk-panel">
+      <p>{{ FOOTER }}</p>
+
+      <p>Powered by <a href="http://blog.getpelican.com">Pelican</a>.<br class="uk-visible-small"> Theme <a href="https://github.com/lucachr/pelican-mg">mg</a> by <a href="https://github.com/lucachr">Luca Chiricozzi</a>.</p>
+    </div>
+  </div>
 </footer>
 
 <div id="mg-offcanvas" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
+  <div class="uk-offcanvas-bar">
 
-        {% if not DISABLE_SEARCH %}
-        <form class="uk-search" action="search.html" data-uk-search>
-            <input class="uk-search-field" type="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search...">
-        </form>
-        {% endif %}
+    {% if not DISABLE_SEARCH %}
+    <form class="uk-search" action="search.html" data-uk-search>
+      <input class="uk-search-field" type="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search...">
+    </form>
+    {% endif %}
 
-        <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
-            {% if DISPLAY_CATEGORIES_ON_MENU != False %}
-            <li class="uk-nav-header">Categories</li>
-            {% for cat, _ in categories %}
-            <li {% if cat == category %}class="uk-active"{% endif %}>
-              <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-            </li>
-            {% endfor %}
-            {% endif %}
+    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+      {% if DISPLAY_CATEGORIES_ON_MENU != False %}
+      <li class="uk-nav-header">Categories</li>
+      {% for cat, _ in categories %}
+      <li {% if cat == category %}class="uk-active"{% endif %}>
+        <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
 
-            {% if DISPLAY_PAGES_ON_MENU != False %}
-            <li class="uk-nav-header">Pages</li>
-            {% for p in PAGES %}
-            <li {% if p == page %}class="uk-active"{% endif %}>
-                <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-            </li>
-            {% endfor %}
-            {% endif %}
+      {% if DISPLAY_PAGES_ON_MENU != False %}
+      <li class="uk-nav-header">Pages</li>
+      {% for p in PAGES %}
+      <li {% if p == page %}class="uk-active"{% endif %}>
+        <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
 
-            <li class="uk-nav-divider"></li>
-            <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
-        </ul>
-    </div>
+      <li class="uk-nav-divider"></li>
+      <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+    </ul>
+  </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -225,4 +231,3 @@
 {% include 'analytics.html' %}
 </body>
 </html>
-

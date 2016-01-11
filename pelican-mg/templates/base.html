@@ -100,10 +100,17 @@
 
             <div class="uk-panel uk-panel-box">
                 <ul class="uk-nav uk-nav-side">
+                    {% if DISPLAY_CATEGORIES_ON_MENU != False %}
                     <li class="uk-nav-header">Categories</li>
+
                     {% for cat, _ in categories %}
-                    <li {% if cat == category %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    <li {% if cat == category %}class="uk-active"{% endif %}>
+                      <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+                    </li>
                     {% endfor %}
+
+                    {% endif %}
+
                     {% if DISPLAY_PAGES_ON_MENU != False %}
                     <li class="uk-nav-header">Pages</li>
 
@@ -176,10 +183,15 @@
         {% endif %}
 
         <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+            {% if DISPLAY_CATEGORIES_ON_MENU != False %}
             <li class="uk-nav-header">Categories</li>
             {% for cat, _ in categories %}
-            <li {% if cat == category %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            <li {% if cat == category %}class="uk-active"{% endif %}>
+              <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+            </li>
             {% endfor %}
+            {% endif %}
+
             {% if DISPLAY_PAGES_ON_MENU != False %}
             <li class="uk-nav-header">Pages</li>
             {% for p in PAGES %}
@@ -187,7 +199,6 @@
                 <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
             </li>
             {% endfor %}
-
             {% endif %}
 
             <li class="uk-nav-divider"></li>

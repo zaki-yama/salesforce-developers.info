@@ -19,13 +19,16 @@ MD_EXTENSIONS = [
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['assets']
 
-PATH = 'content'
-STATIC_PATHS = ['images', 'extra/favicon.ico']
-EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
-}
 FAVICON = 'favicon.ico'
 FAVICON_TYPE = 'image/vnd.microsoft.icon'
+IPHONE_ICON = 'apple-touch-icon.png'
+
+PATH = 'content'
+STATIC_PATHS = ['images', 'extra']
+EXTRA_PATH_METADATA = {
+    'extra/' + FAVICON: {'path': FAVICON},
+    'extra/' + IPHONE_ICON: {'path': IPHONE_ICON},
+}
 
 LOCALE = 'en_US'
 TIMEZONE = 'Asia/Tokyo'

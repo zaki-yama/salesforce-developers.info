@@ -50,11 +50,8 @@ a {
     font-family: "Helvetica Neue";
   }
 
-  h2, h3 {
-    font-family: "Yanone Kaffeesatz";
-  }
-
   h2 {
+    font-family: "Yanone Kaffeesatz";
     font-weight: bold;
     margin-top: 50px;
 
@@ -66,6 +63,8 @@ a {
   }
 
   h3 {
+    font-weight: bold;
+
     &:before {
       font-family: "FontAwesome";
       content: "\f0e7";

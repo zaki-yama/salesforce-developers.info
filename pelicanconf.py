@@ -75,7 +75,7 @@ DEFAULT_PAGINATION = 10
 DISPLAY_PAGES_ON_MENU = True
 
 # Display categories list on the top menu
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # Display categories list as a submenu of the top menu
 DISPLAY_CATEGORIES_ON_SUBMENU = False

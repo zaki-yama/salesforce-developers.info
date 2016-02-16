@@ -50,6 +50,10 @@ a {
     font-family: "Helvetica Neue";
   }
 
+  p {
+    word-wrap: break-word;
+  }
+
   h2 {
     font-family: "Yanone Kaffeesatz";
     font-weight: bold;

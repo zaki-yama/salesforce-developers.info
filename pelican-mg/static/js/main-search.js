@@ -10,6 +10,6 @@ $(document).ready(function() {
         'showURL': false,
         'descriptiveWords': 75,
         'highlightEveryTerm': true,
-        'contentLocation': 'salesforce-developers.info/tipue_search.json'
+        'contentLocation': '/tipue_search.json'
     });
 });

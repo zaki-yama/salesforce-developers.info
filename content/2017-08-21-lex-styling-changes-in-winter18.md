@@ -2,6 +2,7 @@ Title: Winter'18からLEXのスタイルがちょっとだけ変わります
 Date: 2017-08-21 17:00
 Slug: 2017-08-21
 Author: zaki-yama
+Category: Winter'18
 
 最後に更新したのいつだろうと思ったら 4 月でした。
 このまま更新頻度が Salesforce のリリース並になってしまうのは避けたいので、

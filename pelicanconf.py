@@ -16,8 +16,8 @@ MD_EXTENSIONS = [
     'codehilite(css_class=highlight)', 'extra',  # default
 ]
 
-PLUGIN_PATHS = ['plugins']
-PLUGINS = ['assets']
+PLUGIN_PATHS = []
+PLUGINS = []
 
 FAVICON = 'favicon.ico'
 FAVICON_TYPE = 'image/vnd.microsoft.icon'

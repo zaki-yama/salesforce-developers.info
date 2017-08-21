@@ -54,9 +54,8 @@
 {% if not DISABLE_SEARCH %}
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/css/components/search.min.css">
 {% endif %}
-{% assets filters="scss", output="css/style.css", "scss/main.scss", "scss/tipuesearch.scss", "css/solarized.css"  %}
-  <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
-{% endassets %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/tipuesearch.css">
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 </head>
